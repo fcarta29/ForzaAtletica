@@ -1,0 +1,8 @@
+.project
+.settings/
+.classpath
+.db
+data/tmp
+sensors.dmp
+node_modules
+elarm.db
