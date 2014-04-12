@@ -308,11 +308,11 @@ body{
 	color:#ED2F3D;
 }
 /*----start-about-----*/
-.about-grid{
+.about-grid-left{
 	width: 31.33%;
 	float: left;
 }
-.about-grid h3{
+.about-grid-left h3{
 	font-family: 'PT Sans Narrow', sans-serif;
 	font-size: 30px;
 	font-weight: 400;
@@ -321,7 +321,7 @@ body{
 	text-transform: uppercase;
 	color: #0599D4;
 }
-.about-grid span{
+.about-grid-left span{
 	font-family: Arial, Helvetica, sans-serif;
 	color: #6a6a6a;
 	font-size: 0.875em;
@@ -330,13 +330,43 @@ body{
 	font-weight: bold;
 	display: block;
 }
-.about-grid p{
+.about-grid-left p{
 	font-family: Arial, Helvetica, sans-serif;
 	color: #6a6a6a;
 	font-size: 0.875em;
 	padding: 5px 0 10px 0;
 	line-height: 1.8em;
 }
+.about-grid-right{
+    width: 62.66%;
+    float: right;
+}
+.about-grid-right h3{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 2em;
+    margin: 0;
+    text-transform: uppercase;
+    color: #0599D4;
+}
+.about-grid-right span{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #6a6a6a;
+    font-size: 0.875em;
+    padding: 5px 0 1px 0;
+    line-height: 1.5em;
+    font-weight: bold;
+    display: block;
+}
+.about-grid-right p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #6a6a6a;
+    font-size: 0.875em;
+    padding: 5px 0 10px 0;
+    line-height: 1.8em;
+}
+
 .center-grid1 p{
 	padding:0px 0px 10px 0px;
 }
@@ -375,6 +405,10 @@ body{
 	padding: 0px 0 10px 0;
 	line-height: 1.8em;
 }
+.about-team-right label{
+    color: #ED2F3D;
+}
+
 .client {
 	padding-bottom: 10px;
 }
@@ -834,9 +868,12 @@ http://i748.photobucket.com/albums/xx128/fcarta29/favicon_zps32410540.png
 	.center-box {
 		padding: 0px 32px
 	}
-	.about-grid h3 {
+	.about-grid-left h3 {
 		font-size: 24px;
 	}
+    .about-grid-right h3 {
+        font-size: 24px;
+    }	
 	.service-content ul li span {
 		width: 9%;
 		height: 100px;
