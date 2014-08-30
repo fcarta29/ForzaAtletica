@@ -11,25 +11,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<link rel="icon" type="image/ico" href="images/favicon.ico">
 		<link href="css/style.css" rel="stylesheet" type="text/css"  media="all" />
 		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
-		<!-- script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script-->
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-		<script src="js/galleria/galleria-1.4.2.min.js"></script>
-		<script src="js/galleria/plugins/facebook/galleria.facebook.js"></script>		
-		
-		<script type="text/javascript">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		  <script type="text/javascript">
 			jQuery(document).ready(function($) {
 				$(".scroll").click(function(event){		
 					event.preventDefault();
 					$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
 				});
-				
-				// https://www.facebook.com/media/set/?set=a.443443119043143.106557.443411999046255&type=3
-				Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js');
-				Galleria.run('#galleria', {
-					facebook: 'album:443443119043143',
-				 	width: 745,
-				 	height: 550,
-				 	lightbox: true});				
 			});
 		</script>
 	</head>
@@ -38,7 +26,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	
 		<!---start-header---->
 		<div class="header" id="top">
-		    <div class="book-now"><a href="schedule.html"><img src="images/book-now.png" title="logo" /></a></div>  
+		    <div class="book-now"><a href="schedule.html"><img src="images/book-now.png" title="logo" /></a></div>
 			<div class="wrap">
 			<!---start-logo---->
 			<div class="logo">
@@ -51,7 +39,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<li><a href="index.html">Home</a></li>
 					<li><a href="about.html">About Us</a></li>
 					<li><a href="services.html">Services</a></li>
-					<li class="active"><a href="gallery.html">Gallery</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
 			</div>
@@ -63,48 +51,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<!---start---content----->
 		<div class="wrap">
 		<div class="content">
-			<!---start-gallery---->
-			<div class="gallerys">
-					<h3>Photos</h3>
-					<!--div class="gallery-grids">
-						<div class="gallery-grid">
-							<a href="images/NewcoverJuliLinnChrisFrank.jpg"><img src="images/NewcoverJuliLinnChrisFrank.jpg" alt=""></a>
-							<h4>Community</h4>
-						</div>
-						<div class="gallery-grid grid2">
-							<a href="images/CircuitKyleJennyJordan.jpg"><img src="images/CircuitKyleJennyJordan.jpg" alt=""></a>
-							<h4>Workouts</h4>
-						</div>
-						<div class="gallery-grid">
-							<a href="images/equipcollage.jpg"><img src="images/equipcollage.jpg" alt=""></a>
-							<h4>Equipment</h4>
-						</div>
-						
-						<div class="clear"> </div>
-					</div-->
-					<div id="galleria"></div>
-					
-					</div>
-					<script type="text/javascript" src="js/jquery.lightbox.js"></script>
-				    <link rel="stylesheet" type="text/css" href="css/lightbox.css" media="screen">
-				  	<script type="text/javascript">
-				    $(function() {
-				        $('.gallery-grid a').lightBox();
-				    });
-				    </script>
-				    <div class="clear"> </div>
-				    <div class="projects-bottom-paination">
-						
-					</div>
-				</div>
-			<!---End-gallery---->
+		<!---start-events---->
+			<div class="events">
+				<div class="events-content">
+				
+				
+					<!---End-events---->
 		</div>
 		</div>
-			<!---start-box---->
-			<div class="boxs">
-				<div class="wrap">
-				<div class="box">
-					</div>
 		</div>
 			<!---start-box---->
 			<div class="boxs">
@@ -136,8 +90,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<!---End---content----->
 		<div class="clear"> </div>
 	</div>
-	</div>
+		<div class="clear"> </div>
+
 	<!---End-wrap---->
 	</body>
 </html>
-
+							
