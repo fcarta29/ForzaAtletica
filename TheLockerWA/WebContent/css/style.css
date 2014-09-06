@@ -220,6 +220,12 @@ body{
 	transition: all 0.3s ease-out;
 	font-family: 'PT Sans Narrow', sans-serif;
 }
+.center-box ul li{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 1.0em;
+    text-transform: uppercase;
+    color: #0599D4;
+}
 .center-box ul li a:hover{
 	color:#ED2F3D;
 }
@@ -390,15 +396,38 @@ body{
 .center-grid1 label:hover {
 	color: #0599D4;
 }
+.about-team-header {
+    padding: 0px 0px 20px 0px;
+}
+.about-team-header h3 {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 2em;
+    margin: 0;
+    text-transform: uppercase;
+    color: #0599D4;
+}
+.about-team-header p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #6a6a6a;
+    font-size: 0.875em;
+    padding: 0px 0 10px 0;
+    line-height: 1.8em;
+}
 .about-team-left{
 	float:left;
-	width:25%;
+	width: 210px;
+}
+.about-team-left img {
+    padding-top: 10px;
 }
 .about-team-right{
-	float:right;
-	width: 73%;
+	float:left;
+	width: 75%;
+	margin-left: 15px;
 }
-.about-team-right p{
+.about-team-right p {
 	font-family: Arial, Helvetica, sans-serif;
 	color: #6a6a6a;
 	font-size: 0.875em;
@@ -406,13 +435,23 @@ body{
 	line-height: 1.8em;
 }
 .about-team-right label{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
     color: #ED2F3D;
+}
+.about-team-right ul li{
+    margin-left: 15px;
+}
+.about-team-right ul li{
+	list-style-type: circle;
+    color: #0599D4;
 }
 
 .client {
 	padding-bottom: 10px;
 }
-.about-grids {
+.about-team {
 	padding: 10px 0px 0px 0px;
 }
 .about-team-left img {
@@ -440,37 +479,43 @@ body{
 }
 .service-content ul li{
 	display: block;
+	height: 90px;
+	margin-top: 15px;
 }
-.service-content ul li span{
-	width: 5%;
+.service-content ul li span {
+	width: 50px;
+	height: 90px;
 	float: left;
 	font-size: 3em;
+	text-align: right;
+	padding-right: 15px;
 	color: #0599D4;
 	font-family: 'PT Sans Narrow', sans-serif;
 }
-.service-content ul li p{
+.service-content ul li div {
+    font-size: 1.2em;
+    color: #0599D4;
+    font-family: 'PT Sans Narrow', sans-serif;
+    display: block;
+}
+.service-content ul li p {
 	font-family: Arial, Helvetica, sans-serif;
 	color: #6a6a6a;
 	font-size: 0.875em;
 	padding: 5px 0 10px 0;
 	line-height: 1.8em;
-}
-.service-content ul li p a{
-	font-size: 1.2em;
-	color: #0599D4;
-	font-family: 'PT Sans Narrow', sans-serif;
 	display: block;
 }
-.service-content{
+.service-content {
 	float:left;
-	width: 74.5%;
+	width: 75%;
 }
 .service-content ul{
 	padding-bottom:5px;
 }
-.services-sidebar{
-	float:right;
-	width:23%;
+.services-sidebar {
+	float:left;
+	width:25%;
 }
 .services-sidebar h3{
 	font-family: 'PT Sans Narrow', sans-serif;
@@ -481,24 +526,22 @@ body{
 	text-transform: uppercase;
 	color: #0599D4;
 }
-.services-sidebar ul li a{
-	display: block;
-	font-family: 'PT Sans Narrow', sans-serif;
-	font-size: 1em;
-	color: #0599D4;
-	padding: 2px 0px 5px 0px;
-	transition: 0.5s ease;
-	-o-transition: 0.5s ease;
-	-webkit-transition: 0.5s ease;
-}
-.services-sidebar ul li a:hover{
-	color: #ED2F3D;
-}
 .services-sidebar ul li {
 	border-bottom: 1px dashed rgba(192, 192, 192, 0.33);
 	background: url(../images/marker.png) 0 15px no-repeat;
 	padding: 9px 13px 8px 23px;
 }
+.services-sidebar ul li div {
+    display: block;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 1em;
+    color: #0599D4;
+    padding: 2px 0px 5px 10px;
+    transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+}
+
 .services {
 	padding-top: 10px;
 }
@@ -514,6 +557,7 @@ http://i748.photobucket.com/albums/xx128/fcarta29/favicon_zps32410540.png
 /*---start-gallery---*/
 .gallerys {
 	padding-top: 10px;
+	width: 80%;
 }
 .gallerys h3{
 	font-family: 'PT Sans Narrow', sans-serif;
@@ -524,6 +568,11 @@ http://i748.photobucket.com/albums/xx128/fcarta29/favicon_zps32410540.png
 	text-transform: uppercase;
 	color: #0599D4;
 }
+.gallerys div {
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .gallery-grid{
 	width: 31.44%;
 	float:left;
@@ -731,39 +780,112 @@ http://i748.photobucket.com/albums/xx128/fcarta29/favicon_zps32410540.png
 	margin-bottom:15px;
 }
 
-.testimonials_content {
-
+.testimonials-header {
+    padding: 0px 0px 20px 0px;
+}
+.testimonials-header h3 {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 2em;
+    margin: 0;
+    text-transform: uppercase;
+    color: #0599D4;
+}
+.testimonials-header p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #6a6a6a;
+    font-size: 0.875em;
+    padding: 0px 0 10px 0;
+    line-height: 1.8em;
 }
 
-.testimonials_content span {
-	float: left;
-	color:#0599D4;
-	font-family: 'PT Sans Narrow', sans-serif;	
+.testimonials-content p {
+    font-style: italic;
+    color:#6a6a6a;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 1.0em;
+    line-height: 1.8em;
+    text-decoration: none;
+}
+.testimonials-content .testimonials-content-image-left {
+	float:left; 
+	width: 200px;
+	height: 200px;
+}
+.testimonials-content .testimonials-content-image-right {
+    float:right; 
+    width: 200px;
+    height: 200px;
+}
+.testimonials-content .testimonials-content-right {
+    height: 210px;
+    margin: 0px 0px 0px 225px;
+}
+.testimonials-content .testimonials-content-left {
+    height: 210px;
+    margin: 0px 225px 0px 0px;
+}
+.testimonials-content .divider {
+    border-bottom: 1px dashed rgba(192, 192, 192, 0.33);
+    margin: 20px 0px 20px 0px;	
 }
 
-.testimonials_content ul {
-
+.events-header {
+    padding: 0px 0px 20px 0px;
+}
+.events-header h3 {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 2em;
+    margin: 0;
+    text-transform: uppercase;
+    color: #0599D4;
+}
+.events-header p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #6a6a6a;
+    font-size: 0.875em;
+    padding: 0px 0 10px 0;
+    line-height: 1.8em;
+}
+.events-content p {
+    font-style: italic;
+    color:#6a6a6a;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 1.0em;
+    line-height: 1.8em;
+    text-decoration: none;
 }
 
-.testimonials_content ul li {
-	
+
+.social-media-contacts {
+    float:left; 
 }
 
-.testimonials_content ul li span {
-	display: block;
-	padding: 0px 0px 30px 0px;
+.social-media-contacts ul li {
+    display:inline-block;
+    float:left;
 }
 
-.testimonials_content ul li span {
-	font-style: italic;
-	color:#6a6a6a;
-	font-family: 'PT Sans Narrow', sans-serif;
-	font-size: 20px;
-	font-weight: 400;
-	line-height: 1.2em;
-	text-decoration: none;
-	
+.social-media-icon-facebook { 
+     background: url(../images/social_media_icons.jpg) -2px -3px; 
+     width:48px; 
+     height: 40px;
 }
+
+.social-media-icon-twitter { 
+     background: url(../images/social_media_icons.jpg) 0 -51px;  
+     width:48px; 
+     height: 40px;
+}   
+
+.social-media-icon-instagram { 
+     background: url(../images/social_media_icons.jpg) -100px 0;  
+     width:48px; 
+     height: 40px;
+}   
 
 /***** Media Quries *****/
 @media only screen and (max-width: 1024px) {
@@ -916,24 +1038,4 @@ http://i748.photobucket.com/albums/xx128/fcarta29/favicon_zps32410540.png
 		margin: 0px 17px;
 	}
 
-	.social-media-icon-facebook { 
-		 background: url(../images/social_media_icons.jpg); 
-		 background-position: 0 0px; 
-		 width: 50px; 
-		 height: 42px;
-	}
-	
-	.social-media-icon-twitter { 
-		 background-image: url(../images/social_media_icons.jpg); 
-		 background-position: -50 0px; 
-		 width: 50px; 
-		 height: 42px;
-	}	
-
-	.social-media-icon-instagram { 
-		 background-image: url(../images/social_media_icons.jpg); 
-		 background-position: -100 0px; 
-		 width: 50px; 
-		 height: 42px;
-	}	
 }

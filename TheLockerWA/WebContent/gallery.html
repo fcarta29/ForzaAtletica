@@ -14,22 +14,20 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<!-- script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script-->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
 		<script src="js/galleria/galleria-1.4.2.min.js"></script>
-		<script src="js/galleria/plugins/facebook/galleria.facebook.js"></script>		
-		
+		<script src="js/galleria/plugins/facebook/galleria.facebook.js"></script>	
+        <script type="text/javascript" src="js/jquery.lightbox.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/lightbox.css" media="screen">
+					
 		<script type="text/javascript">
 			jQuery(document).ready(function($) {
-				$(".scroll").click(function(event){		
-					event.preventDefault();
-					$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
-				});
-				
-				// https://www.facebook.com/media/set/?set=a.443443119043143.106557.443411999046255&type=3
 				Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js');
 				Galleria.run('#galleria', {
 					facebook: 'album:443443119043143',
-				 	width: 745,
+				 	width: 800,
 				 	height: 550,
-				 	lightbox: true});				
+				 	lightbox: true});	
+				
+			    $('.gallery-grid a').lightBox();
 			});
 		</script>
 	</head>
@@ -40,103 +38,68 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="header" id="top">
 		    <div class="book-now"><a href="schedule.html"><img src="images/book-now.png" title="logo" /></a></div>  
 			<div class="wrap">
-			<!---start-logo---->
-			<div class="logo">
-				<a href="index.html"><img src="images/logo.png" title="logo" /></a>
-			</div>
-			<!---End-logo---->
-			<!---start-top-nav---->
-			<div class="top-nav">
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">About Us</a></li>
-					<li><a href="services.html">Services</a></li>
-					<li class="active"><a href="gallery.html">Gallery</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-			</div>
-			<div class="clear"> </div>
-			<!---End-top-nav---->
-		</div>
-		<!---End-header---->
-	</div>
-		<!---start---content----->
-		<div class="wrap">
-		<div class="content">
-			<!---start-gallery---->
-			<div class="gallerys">
-					<h3>Photos</h3>
-					<!--div class="gallery-grids">
-						<div class="gallery-grid">
-							<a href="images/NewcoverJuliLinnChrisFrank.jpg"><img src="images/NewcoverJuliLinnChrisFrank.jpg" alt=""></a>
-							<h4>Community</h4>
-						</div>
-						<div class="gallery-grid grid2">
-							<a href="images/CircuitKyleJennyJordan.jpg"><img src="images/CircuitKyleJennyJordan.jpg" alt=""></a>
-							<h4>Workouts</h4>
-						</div>
-						<div class="gallery-grid">
-							<a href="images/equipcollage.jpg"><img src="images/equipcollage.jpg" alt=""></a>
-							<h4>Equipment</h4>
-						</div>
-						
-						<div class="clear"> </div>
-					</div-->
-					<div id="galleria"></div>
-					
-					</div>
-					<script type="text/javascript" src="js/jquery.lightbox.js"></script>
-				    <link rel="stylesheet" type="text/css" href="css/lightbox.css" media="screen">
-				  	<script type="text/javascript">
-				    $(function() {
-				        $('.gallery-grid a').lightBox();
-				    });
-				    </script>
-				    <div class="clear"> </div>
-				    <div class="projects-bottom-paination">
-						
-					</div>
+				<!---start-logo---->
+				<div class="logo">
+					<a href="index.html"><img src="images/logo.png" title="logo" /></a>
 				</div>
-			<!---End-gallery---->
-		</div>
-		</div>
-			<!---start-box---->
-			<div class="boxs">
-				<div class="wrap">
-				<div class="box">
-					</div>
-		</div>
-			<!---start-box---->
-			<div class="boxs">
-				<div class="wrap">
-				<div class="box">
-					<h3>NEWS</h3>
-					<span>08.15.2014</span>
-					<p> We are available to assist you in your journey to the best and fittest life possible. Contact us for an introductory workout!</p>
-					
-					<span>06.01.2014</span>
-					<p>We have a new logo and new class times. Come in and check us out! <p>
-				</div>
-				<div class="box center-box">
+				<!---End-logo---->
+				<!---start-top-nav---->
+				<div class="top-nav">
 					<ul>
-						<li><a href="#">We train all ages; young kids to the elderly with our adaptable approach to helping everyone at any level</a></li>
-						<li><a href="#">Your body is the most important tool you own</a></li>
-						<li><a href="#">We believe in helping one achieve their potential in a safe non-intimidating environment</a></li>
-						
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="services.html">Services</a></li>
+						<li class="active"><a href="gallery.html">Gallery</a></li>
+						<li><a href="contact.html">Contact</a></li>
 					</ul>
 				</div>
-				<div class="box">
-					<h3>DID YOU KNOW?</h3>
-					<p>Body weight workouts can be just as beneficial and intense as a 1-rep max when performed properly.	<a a></p>
-				</div>
 				<div class="clear"> </div>
-			</div>
-			<!---start-box---->
+			<!---End-top-nav---->
+            </div>
+		<!---End-header---->
+        </div>
+	
+		<!---start---content----->
+		<div class="wrap">
+            <div class="content">
+				<!---start-gallery---->
+				<div class="gallerys">
+                    <h3>Photos</h3>
+                    <div id="galleria"></div>
+                    <div class="projects-bottom-paination"></div>						
+	            </div>
+            </div>
+			<!---End-gallery---->
 		</div>
-		<!---End---content----->
-		<div class="clear"> </div>
-	</div>
-	</div>
+
+        <!---start-box---->
+        <div class="boxs">
+            <div class="wrap">
+                <div class="box">
+                    <h3>NEWS</h3>
+                    <span>08.15.2014</span>
+                    <p> We are available to assist you in your journey to the best and fittest life possible. Contact us for an introductory workout!</p>
+                    <span>06.01.2014</span>
+                    <p> We have a new logo and new class times. Come in and check us out! </p>
+                </div>
+                <div class="box center-box">
+                    <ul>
+                        <li>We train all ages; young kids to the elderly with our adaptable approach to helping everyone at any level</li>
+                        <li>Your body is the most important tool you own</li>
+                        <li>We believe in helping one achieve their potential in a safe non-intimidating environment</li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h3>DID YOU KNOW?</h3>
+                    <p>Body weight workouts can be just as beneficial and intense as a 1-rep max when performed properly.   <a a></p>
+                </div>
+                <div class="clear"> </div>
+            </div>
+            <!---start-box---->
+        </div>
+        <!---End---content----->
+        <div class="clear"> </div>
+
 	<!---End-wrap---->
 	</body>
 </html>

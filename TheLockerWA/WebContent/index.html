@@ -13,116 +13,100 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/responsiveslides.css">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-		<script src="js/responsiveslides.min.js"></script>
-		  <script type="text/javascript">
-			jQuery(document).ready(function($) {
-				$(".scroll").click(function(event){		
-					event.preventDefault();
-					$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
-				});
-			});
-		</script>
-		<script type="text/javascript">
-			jQuery(document).ready(function($) {
-				$(".scroll").click(function(event){		
-					event.preventDefault();
-					$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
-				});
-			});
-		</script>
 	</head>
 	<body>
 	<!---start-wrap---->
+	
 		<!---start-header---->
 		<div class="header" id="top">
-			<div class="book-now"><a href="schedule.html"><img src="images/book-now.png" title="logo" /></a></div>
+            <div class="book-now"><a href="schedule.html"><img src="images/book-now.png" title="logo" /></a></div>
 			<div class="wrap">
-			
-			<!---start-logo---->
-			<div class="logo">
-				<a href="index.html"><img src="images/logo.png" title="logo" /></a>
-			</div>
-			<!---End-logo---->
-			<!---start-top-nav---->
-			<div class="top-nav">
-				<ul>
-					<li class="active"><a href="index.html">Home</a></li>
-					<li><a href="about.html">About Us</a></li>
-					<li><a href="services.html">Services</a></li>
-					<li><a href="gallery.html">Gallery</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-			</div>
-			
-			
-			<div class="clear"> </div>
+				<!---start-logo---->
+				<div class="logo">
+					<a href="index.html"><img src="images/logo.png" title="logo" /></a>
+				</div>
+				<!---End-logo---->
+				<!---start-top-nav---->
+				<div class="top-nav">
+					<ul>
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="services.html">Services</a></li>
+						<li><a href="gallery.html">Gallery</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+				<div class="clear"> </div>
 			<!---End-top-nav---->
-			
+            </div>
+        <!---End-header---->
+        </div>
+	
+        <!--start-image-slider---->
+        <div class="image-slider">
+			<!-- Slideshow 1 -->
+			<ul class="rslides" id="slider1">
+                <li><img src="images/slider_static.png" alt=""></li>
+			     <!-- li><img src="images/slider3.jpg" alt=""></li>
+			     <li><img src="images/slider1.jpg" alt=""></li>
+			     <li><img src="images/slider3.jpg" alt=""></li-->
+			</ul>
+			<!-- Slideshow 2 -->
 		</div>
-		<!---End-header---->
-	</div>
-		<!--start-image-slider---->
-					<div class="image-slider">
-						<!-- Slideshow 1 -->
-					    <ul class="rslides" id="slider1">
-					       <li><img src="images/slider_static.png" alt=""></li>
-					      <!-- li><img src="images/slider3.jpg" alt=""></li>
-					      <li><img src="images/slider1.jpg" alt=""></li>
-					      <li><img src="images/slider3.jpg" alt=""></li-->
-					    </ul>
-						 <!-- Slideshow 2 -->
-					</div>
-					<!--End-image-slider---->
+        <!--End-image-slider---->
+		
 		<!---start---content----->
 		<div class="wrap">
-		<div class="content">
-			<!---start-grids----->
-			<div class="grids">
-				 <div class="grid">
-				 	<h3>TEAM</h3>
-				 	<a href="about.html"><img src="images/NewTeamPic.jpg"  title="Team" /></a>
-				 	<p>At The Locker WA we believe all people can incorporate a elite level of fitness and activity in their lives with safety and correct form being paramount. We incorporate a variety of exercises that help people of all ages achieve a higher level of fitness with group encouragement.</p>
-				 </div>
-				 <div class="grid">
-				 	<h3>SCHEDULE</h3>
-				 	<a href="schedule.html"><img src="images/schedule.png"  title="Schedule" /></a>
-				 	<p>We offer a flexible online scheduling system for our group classes and private training along with several different class packages.</p>
-				 	
-				 </div>
-				 <div class="grid">
-				 	<h3>TESTIMONIALS</h3>
-				 	<a href="#"><img src="images/testimonials.jpg"  title="Testimonials" /></a>
-				 	<p>We believe that people young and old can better their lives with our workouts. Read what current and previous clients are saying about The Locker WA</p>
-				 	
-				 </div>
-				 <div class="grid last-grid">
-				 	<h3>EVENTS</h3>
-				 	<a href="#"><img src="images/sprinters.jpg"  title="Events" /></a>
-				 	<p>Check here for upcoming events and group activities. We like to find a variety of ways to be active and participate in our local communities.</p>
-				 	
-				 </div>
-				 <div class="clear"> </div>
-			</div>
-			<!---End-grids----->
+            <div class="content">
+				<!---start-grids----->
+				<div class="grids">
+                    <a href="about.html">
+                        <div class="grid">
+                            <h3>TEAM</h3><img src="images/new_team.jpg"  title="Team" />
+                            <p>At The Locker WA we believe all people can incorporate a elite level of fitness and activity in their lives with safety and correct form being paramount. We incorporate a variety of exercises that help people of all ages achieve a higher level of fitness with group encouragement.</p>
+                        </div>
+                    </a>
+                    <a href="schedule.html">                        
+                        <div class="grid">
+                            <h3>SCHEDULE</h3><img src="images/schedule.png"  title="Schedule" />
+                            <p>We offer a flexible online scheduling system for our group classes and private training along with several different class packages.</p>
+                        </div>
+                    </a>
+                    <a href="testimonials.html">
+                        <div class="grid">
+                            <h3>TESTIMONIALS</h3>
+                            <img src="images/testimonials.jpg"  title="Testimonials" />
+                            <p>We believe that people young and old can better their lives with our workouts. Read what current and previous clients are saying about The Locker WA</p>
+                        </div>
+                    </a>
+					<a href="events.html">
+                        <div class="grid last-grid">
+                            <h3>EVENTS</h3>
+                            <img src="images/sprinters.jpg"  title="Events" />
+                            <p>Check here for upcoming events and group activities. We like to find a variety of ways to be active and participate in our local communities.</p>
+                        </div>					
+					</a> 
+                    <div class="clear"> </div>
+                </div>
+				<!---End-grids----->
+            </div>
 		</div>
-		</div>
-			<!---start-box---->
-			<div class="boxs">
-				<div class="wrap">
-				<div class="box">
+		
+        <!---start-box---->
+        <div class="boxs">
+            <div class="wrap">
+                <div class="box">
 					<h3>NEWS</h3>
 					<span>08.15.2014</span>
 					<p> We are available to assist you in your journey to the best and fittest life possible. Contact us for an introductory workout!</p>
-					
 					<span>06.01.2014</span>
 					<p> We have a new logo and new class times. Come in and check us out! </p>
 				</div>
 				<div class="box center-box">
 					<ul>
-						<li><a href="#">We train all ages; young kids to the elderly with our adaptable approach to helping everyone at any level</a></li>
-						<li><a href="#">Your body is the most important tool you own</a></li>
-						<li><a href="#">We believe in helping one achieve their potential in a safe non-intimidating environment</a></li>
-						
+						<li>We train all ages; young kids to the elderly with our adaptable approach to helping everyone at any level</li>
+						<li>Your body is the most important tool you own</li>
+						<li>We believe in helping one achieve their potential in a safe non-intimidating environment</li>
 					</ul>
 				</div>
 				<div class="box">
@@ -130,14 +114,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<p>Body weight workouts can be just as beneficial and intense as a 1-rep max when performed properly.	<a a></p>
 				</div>
 				<div class="clear"> </div>
-			</div>
+            </div>
 			<!---start-box---->
 		</div>
 		<!---End---content----->
-		<div class="clear"> </div>
-	</div>
+        <div class="clear"> </div>
 	
 	<!---End-wrap---->
 	</body>
 </html>
-
