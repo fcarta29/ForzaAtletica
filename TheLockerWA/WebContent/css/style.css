@@ -156,6 +156,15 @@ http://i748.photobucket.com/albums/xx128/fcarta29/favicon_zps32410540.png
 .events-header h3{font-family:'PT Sans Narrow', sans-serif;font-size:30px;font-weight:400;line-height:2em;margin:0;text-transform:uppercase;color:#0599D4;}
 .events-header p{font-family:Arial, Helvetica, sans-serif;color:#6a6a6a;font-size:0.875em;padding:0px 0 10px 0;line-height:1.8em;}
 .events-content p{font-style:italic;color:#6a6a6a;font-family:'PT Sans Narrow', sans-serif;font-size:1.0em;line-height:1.8em;text-decoration:none;}
+.teams-header{padding:0px 0px 20px 0px;}
+.teams-header h3{font-family:'PT Sans Narrow', sans-serif;font-size:30px;font-weight:400;line-height:2em;margin:0;text-transform:uppercase;color:#0599D4;}
+.teams-header p{font-family:Arial, Helvetica, sans-serif;color:#6a6a6a;font-size:0.875em;padding:0px 0 10px 0;line-height:1.8em;}
+.teams-content h3{font-family:'PT Sans Narrow', sans-serif;font-size:30px;font-weight:400;line-height:2em;margin:0;text-transform:uppercase;color:#0599D4;}
+.teams-content ul li div{font-size:1.2em;color:#ED2F3D;font-family:'PT Sans Narrow', sans-serif;display:block;}
+.teams-content ul li ul {font-family:Arial, Helvetica, sans-serif;color:#6a6a6a;font-size:0.875em;padding:5px 0 10px 0;line-height:1.8em;display:block;}
+.teams-content{float:left;width:75%;}
+.teams-content ul{padding-bottom:5px;}
+.teams{padding-top:10px;}
 .social-media-contacts{float:left;}
 .social-media-contacts ul li{display:inline-block;float:left;}
 .social-media-icon-facebook{background:url(../images/social_media_icons.jpg) -2px -3px;width:48px;height:40px;}
