@@ -8,3 +8,4 @@ data/tmp
 sensors.dmp
 node_modules
 elarm.db
+.DS_Store
