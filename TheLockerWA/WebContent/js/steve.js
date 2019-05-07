@@ -7,7 +7,7 @@
     	$(that).prop("disabled",true);
         $('#result').html("Getting data...");
         clearTable();
-        requestCrossDomain('https://green2.kingcounty.gov/lake-buoy/', function(results) {
+        $.get('php/loadbouydata.php', function(results) {
          var tempDom =$('<output>').append($.parseHTML(results));
          var data = $(tempDom).find("#ctl00_kcMasterPagePlaceHolder_c_MetHiddenField");
          if (data && data.length > 0) {
@@ -20,52 +20,6 @@
       });
     })
 });
-
-// Accepts a url and a callback function to run.
-function requestCrossDomain(site, callback) {
-
-    // If no url was passed, exit.
-    if (!site) {
-        alert('No site was passed.');
-        return false;
-    }
-
-    // Take the provided url, and add it to a YQL query. Make sure you encode it!
-    //var yql = 'https://query.yahooapis.com/v1/public/yql?q=' + encodeURIComponent(
-    //'select * from html where url="' + site + '"'
-    //"select * from htmlstring where url='" + site) + '&format=xml&callback=cbFunc';
-
-    var yql = "select * from htmlstring where url='" + site + "' AND xpath='//div'";
-
-    var resturl = "https://query.yahooapis.com/v1/public/yql?q="
-            + encodeURIComponent(yql) + "&format=json"
-            + "&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys";
-
-
-
-
-    // Request that YSQL string, and run a callback function.
-    // Pass a defined function to prevent cache-busting.
-    $.getJSON(resturl, cbFunc);
-
-    function cbFunc(data) {
-        // If we have something to work with...
-        if (data.query.results.result) {
-            // Strip out all script tags, for security reasons.
-            // BE VERY CAREFUL. This helps, but we should do more. 
-            data = data.query.results.result;
-            //.replace(/<script[^>]*>[\s\S]*?<\/script>/gi, '');
-
-            // If the user passed a callback, and it
-            // is a function, call it, and send through the data var.
-            if (typeof callback === 'function') {
-                callback(data);
-            }
-        }
-        // Else, Maybe we requested a site that doesn't exist, and nothing returned.
-        else throw new Error('Nothing returned from getJSON.');
-    }
-}
 
 function readBouyData(bouyData) {
     var bouyArray = bouyData.split(";");
@@ -153,7 +107,7 @@ function addInactiveBouy(inactiveBouyData) {
         addTableData(latitude,row);
         addTableData(longitude,row);
         addTableData(activeInd,row);
-        
+
         table.append(row);
     }
 }
